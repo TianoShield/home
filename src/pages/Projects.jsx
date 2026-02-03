@@ -1,89 +1,38 @@
-import React, { useEffect, useState } from 'react';
-import ProjectCard from '../components/public/ProjectCard';
-import { projectAPI } from '../services/api';
-import LoadingSpinner from '../components/common/LoadingSpinner';
-import { useAuth } from '../context/AuthContext';
+import React from 'react';
+import { FaTools } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
-const Projects = () => {
-  const [projects, setProjects] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [filter, setFilter] = useState('all');
-  const { isAuthenticated } = useAuth();
-
-  useEffect(() => {
-    fetchProjects();
-  }, []);
-
-  const fetchProjects = async () => {
-    try {
-      setLoading(true);
-      const response = await projectAPI.getAll();
-      setProjects(response.data);
-    } catch (error) {
-      console.error('Error fetching projects:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const filteredProjects = projects.filter(project => {
-    if (filter === 'all') return !project.is_hidden || isAuthenticated;
-    if (filter === 'visible') return !project.is_hidden;
-    if (filter === 'hidden') return project.is_hidden && isAuthenticated;
-    return true;
-  });
-
+const Deliverables = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <div className="bg-blue-600 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Projects</h1>
-          <p className="text-xl text-blue-100">
-            Explore our research projects and contributions
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+      <div className="max-w-2xl w-full text-center">
+        <div className="bg-white rounded-lg shadow-lg p-12 border-t-4 border-primary-500">
+          <div className="inline-block p-6 bg-gradient-to-r from-primary-100 to-accent-100 rounded-full mb-6">
+            <FaTools className="text-6xl text-primary-600" />
+          </div>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            Under Construction
+          </h1>
+          <p className="text-xl text-gray-600 mb-8">
+            We're working hard to bring you information about our project deliverables.
+            Check back soon!
           </p>
-        </div>
-      </div>
-
-      {/* Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Filter (only for authenticated users) */}
-        {isAuthenticated && (
-          <div className="mb-8 flex justify-end">
-            <select
-              value={filter}
-              onChange={(e) => setFilter(e.target.value)}
-              className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-50 to-accent-50 text-primary-700 rounded-full text-sm font-semibold">
+            Coming soon...
+          </div>
+          
+          <div className="mt-8">
+            <Link
+              to="/"
+              className="inline-block px-6 py-3 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-md hover:from-primary-600 hover:to-accent-600 transition-all"
             >
-              <option value="all">All Projects</option>
-              <option value="visible">Visible Only</option>
-              <option value="hidden">Hidden Only</option>
-            </select>
+              ← Back to Home
+            </Link>
           </div>
-        )}
-
-        {loading ? (
-          <div className="flex justify-center py-12">
-            <LoadingSpinner />
-          </div>
-        ) : filteredProjects.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredProjects.map(project => (
-              <ProjectCard 
-                key={project.id} 
-                project={project} 
-                isAdmin={isAuthenticated}
-              />
-            ))}
-          </div>
-        ) : (
-          <div className="text-center py-12">
-            <p className="text-gray-500 text-lg">No projects found</p>
-          </div>
-        )}
+        </div>
       </div>
     </div>
   );
 };
 
-export default Projects;
+export default Deliverables;

@@ -4,10 +4,14 @@ const About = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-blue-600 text-white py-16">
+      <div className="bg-gradient-to-r from-dark-900 via-primary-900 to-dark-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">About TianoShield</h1>
-          <p className="text-xl text-blue-100">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <span className="bg-gradient-to-r from-accent-400 to-primary-400 bg-clip-text text-transparent">
+              About TianoShield
+            </span>
+          </h1>
+          <p className="text-xl text-gray-300">
             Enhancing security in the TianoCore ecosystem
           </p>
         </div>
@@ -15,7 +19,7 @@ const About = () => {
 
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
+        <div className="bg-white rounded-lg shadow-lg p-8 md:p-12 border-t-4 border-primary-500">
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 leading-relaxed mb-6">
               A firmware program is embedded in non-volatile storage on a computer's motherboard. It controls how our
@@ -37,7 +41,7 @@ const About = () => {
               (APT) activities.
             </p>
 
-            <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
+            <div className="bg-gradient-to-r from-primary-50 to-accent-50 border-l-4 border-primary-500 p-6 my-8 rounded-r-lg">
               <p className="text-gray-800 font-semibold text-lg">
                 TianoShield aims to focus on enhancing the state of security of the TianoCore ecosystem
                 and improving its overall open-source development process and practices.

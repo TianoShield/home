@@ -20,18 +20,13 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Create mailto link
     const mailtoLink = `mailto:amoin@uccs.edu?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     )}`;
     
-    // Open email client
     window.location.href = mailtoLink;
-    
-    // Show success message
     setSubmitted(true);
     
-    // Reset form
     setFormData({
       name: '',
       email: '',
@@ -39,17 +34,20 @@ const Contact = () => {
       message: ''
     });
     
-    // Hide success message after 5 seconds
     setTimeout(() => setSubmitted(false), 5000);
   };
 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-blue-600 text-white py-16">
+      <div className="bg-gradient-to-r from-dark-900 via-primary-900 to-dark-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
-          <p className="text-xl text-blue-100">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <span className="bg-gradient-to-r from-accent-400 to-primary-400 bg-clip-text text-transparent">
+              Contact Us
+            </span>
+          </h1>
+          <p className="text-xl text-gray-300">
             Get in touch with the TianoShield team
           </p>
         </div>
@@ -69,24 +67,7 @@ const Contact = () => {
             </p>
 
             <div className="space-y-6">
-              {/* <div className="flex items-start">
-                <div className="flex-shrink-0">
-                  <FaEnvelope className="text-2xl text-blue-600" />
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                    Email
-                  </h3>
-                  <a 
-                    href="mailto:amoin@uccs.edu"
-                    className="text-blue-600 hover:text-blue-700"
-                  >
-                    amoin@uccs.edu
-                  </a>
-                </div>
-              </div> */}
-
-              <div className="bg-blue-50 border-l-4 border-blue-600 p-4 mt-8">
+              <div className="bg-gradient-to-r from-primary-50 to-accent-50 border-l-4 border-primary-500 p-4 rounded-r-lg">
                 <p className="text-sm text-gray-700">
                   <strong>Response Time:</strong> We typically respond within 1-2 business days.
                 </p>
@@ -95,15 +76,15 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
+          <div className="bg-white rounded-lg shadow-lg p-8 border-t-4 border-primary-500">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
               Send a Message
             </h2>
 
             {submitted && (
               <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-md flex items-center">
-                <FaCheckCircle className="text-green-600 mr-3" />
-                <p className="text-green-800">
+                <FaCheckCircle className="text-green-600 mr-3 flex-shrink-0" />
+                <p className="text-green-800 text-sm">
                   Your email client should open shortly. If not, please email us directly at amoin@uccs.edu
                 </p>
               </div>
@@ -120,7 +101,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   placeholder="John Doe"
                 />
               </div>
@@ -135,7 +116,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   placeholder="john@example.com"
                 />
               </div>
@@ -150,7 +131,7 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   placeholder="Collaboration Inquiry"
                 />
               </div>
@@ -165,19 +146,17 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows="6"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   placeholder="Your message here..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors font-medium"
+                className="w-full px-6 py-3 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-md hover:from-primary-600 hover:to-accent-600 transition-all font-medium shadow-lg"
               >
                 Send Message
               </button>
-
-              
             </form>
           </div>
         </div>

@@ -4,7 +4,7 @@ import { FaGlobe, FaMapMarkerAlt, FaBriefcase } from 'react-icons/fa';
 const Team = () => {
   const [activeTab, setActiveTab] = useState('implementation');
 
-  // Implementation Teams Data - WITH profession
+  // Implementation Teams Data
   const implementationTeam = [
     {
       id: 1,
@@ -94,10 +94,9 @@ const Team = () => {
       location: 'University of Colorado Colorado Springs, Colorado, USA',
       website: ''
     },
-    // Add more team members here
   ];
 
-  // Consultants & Collaborators Data - ONLY name and website
+  // Consultants & Collaborators Data
   const consultants = [
     {
       name: 'American Megatrends Inc (AMI)',
@@ -139,17 +138,19 @@ const Team = () => {
       name: 'UEFI-RS',
       website: 'https://github.com/rust-osdev/uefi-rs'
     },
-
-    // Add more consultants here
   ];
 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-blue-600 text-white py-16">
+      <div className="bg-gradient-to-r from-dark-900 via-primary-900 to-dark-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Team</h1>
-          <p className="text-xl text-blue-100">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <span className="bg-gradient-to-r from-accent-400 to-primary-400 bg-clip-text text-transparent">
+              Our Team
+            </span>
+          </h1>
+          <p className="text-xl text-gray-300">
             Meet the people behind TianoShield
           </p>
         </div>
@@ -163,7 +164,7 @@ const Team = () => {
               onClick={() => setActiveTab('implementation')}
               className={`py-4 px-2 border-b-2 font-medium text-sm transition-colors ${
                 activeTab === 'implementation'
-                  ? 'border-blue-600 text-blue-600'
+                  ? 'border-primary-500 text-primary-600'
                   : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
               }`}
             >
@@ -173,7 +174,7 @@ const Team = () => {
               onClick={() => setActiveTab('consultants')}
               className={`py-4 px-2 border-b-2 font-medium text-sm transition-colors ${
                 activeTab === 'consultants'
-                  ? 'border-blue-600 text-blue-600'
+                  ? 'border-primary-500 text-primary-600'
                   : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
               }`}
             >
@@ -188,11 +189,11 @@ const Team = () => {
         
         {/* Implementation Teams Tab */}
         {activeTab === 'implementation' && (
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-primary-500">
             <div className="divide-y divide-gray-200">
-              {implementationTeam.map((member, index) => (
+              {implementationTeam.map((member) => (
                 <div
-                  key={index}
+                  key={member.id}
                   className="p-6 hover:bg-gray-50 transition-colors"
                 >
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -202,10 +203,18 @@ const Team = () => {
                       </h3>
                       
                       <div className="space-y-2">
-                        <div className="flex items-center text-blue-600 font-medium">
-                          { member.id == 1 || member.id == 2?(<FaBriefcase className="mr-2 flex-shrink-0" />):<></>}
-                          <span>{member.role}</span>
-                        </div>
+                        {(member.id === 1 || member.id === 2) && (
+                          <div className="flex items-center text-primary-600 font-medium">
+                            <FaBriefcase className="mr-2 flex-shrink-0" />
+                            <span>{member.role}</span>
+                          </div>
+                        )}
+                        
+                        {member.id > 2 && (
+                          <div className="flex items-center text-primary-600 font-medium">
+                            <span>{member.role}</span>
+                          </div>
+                        )}
                         
                         <div className="flex items-center text-gray-700">
                           <span className="mr-2">•</span>
@@ -218,20 +227,20 @@ const Team = () => {
                         </div>
                       </div>
                     </div>
-                    {member.website ? (
-                      <div className="flex-shrink-0">
-                      <a
-                        href={member.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
-                      >
-                        <FaGlobe className="mr-2" />
-                        Visit Website
-                      </a>
-                    </div>
-                    ):<></>}
                     
+                    {member.website && (
+                      <div className="flex-shrink-0">
+                        <a
+                          href={member.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-md hover:from-primary-600 hover:to-accent-600 transition-all"
+                        >
+                          <FaGlobe className="mr-2" />
+                          Visit Website
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
@@ -241,7 +250,7 @@ const Team = () => {
 
         {/* Consultants & Collaborators Tab */}
         {activeTab === 'consultants' && (
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-accent-500">
             <div className="divide-y divide-gray-200">
               {consultants.map((consultant, index) => (
                 <div
@@ -260,7 +269,7 @@ const Team = () => {
                         href={consultant.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-sm"
+                        className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-md hover:from-primary-600 hover:to-accent-600 transition-all text-sm"
                       >
                         <FaGlobe className="mr-2" />
                         Website
@@ -272,7 +281,6 @@ const Team = () => {
             </div>
           </div>
         )}
-
       </div>
     </div>
   );

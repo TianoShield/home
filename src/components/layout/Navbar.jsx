@@ -25,7 +25,9 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <span className="text-2xl font-bold text-primary">TianoShield</span>
+              <span className="text-2xl font-bold bg-gradient-to-r from-primary-500 to-accent-500 bg-clip-text text-transparent">
+                TianoShield
+              </span>
             </Link>
           </div>
 
@@ -37,7 +39,7 @@ const Navbar = () => {
                 to={link.path}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   isActive(link.path)
-                    ? 'bg-primary text-white'
+                    ? 'bg-gradient-to-r from-primary-500 to-accent-500 text-white'
                     : 'text-gray-700 hover:bg-gray-100'
                 }`}
               >
@@ -69,7 +71,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className={`block px-3 py-2 rounded-md text-base font-medium ${
                   isActive(link.path)
-                    ? 'bg-primary text-white'
+                    ? 'bg-gradient-to-r from-primary-500 to-accent-500 text-white'
                     : 'text-gray-700 hover:bg-gray-100'
                 }`}
               >
