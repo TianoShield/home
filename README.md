@@ -49,7 +49,7 @@ Contains GitHub Actions workflow files for CI/CD automation.
 ```javascript
 export default defineConfig({
   plugins: [react()],
-  base: '/Tianoshield_WebPage/',  //  Must match GitHub repo name exactly
+  base: '/home/',  //  Must match GitHub repo name exactly
 })
 ```
 
