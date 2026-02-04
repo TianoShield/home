@@ -53,7 +53,7 @@ export default defineConfig({
 })
 ```
 
-
+**Emoji Link:** [https://emojidb.org/](https://emojidb.org/)
 
 ### Directory Descriptions
 
