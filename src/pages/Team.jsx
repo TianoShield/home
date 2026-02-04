@@ -202,7 +202,7 @@ const Team = () => {
                       <div className="space-y-2">
                         {member.role && (
                           <div className="flex items-center text-primary-600 font-medium">
-                            <FaBriefcase className="mr-2 flex-shrink-0" />
+                            {(member.id<3) ? (<FaBriefcase className="mr-2 flex-shrink-0" />):<></>}
                             <span>{member.role}</span>
                           </div>
                         )}
