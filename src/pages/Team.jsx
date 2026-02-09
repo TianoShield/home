@@ -88,11 +88,14 @@ const Team = () => {
     },
   ];
 
-  // Key Collaborator & the Open-Source Ecosystem (OSE) Team Lead
+  // Open-Source Ecosystem (OSE) Team Lead
   const keyCollaborator = [
     {
-      name: 'Intel Corporation',
-      website: 'https://www.intel.com/content/www/us/en/homepage.html',
+      name: 'TianoCore Community',
+      link1: 'Website',
+      website1: 'https://www.tianocore.org/',
+      link2: 'Repository',
+      website2: 'https://github.com/tianocore',
       contactPerson: '',
       degree: '',
       position: '',
@@ -108,7 +111,10 @@ const Team = () => {
   const consultant = [
     {
       name: 'Binarly Inc.',
-      website: 'https://www.binarly.io/',
+      link1: 'Website',
+      website1: 'https://www.binarly.io/',
+      link2: '',
+      website2: '',
       contactPerson: 'Alex Matrosov',
       degree: '',
       position: 'CEO and Founder',
@@ -123,8 +129,11 @@ const Team = () => {
   // Other Collaborators
   const otherCollaborators = [
     {
-      name: 'American Megatrends Inc (AMI)',
-      website: 'https://www.ami.com/',
+      name: 'American Megatrends Inc. (AMI)',
+      link1: 'Website',
+      website1: 'https://www.ami.com/',
+      link2: '',
+      website2: '',
       contactPerson: '',
       degree: '',
       position: '',
@@ -136,7 +145,10 @@ const Team = () => {
     },
     {
       name: 'Arm',
-      website: 'https://www.arm.com/',
+      link1: 'Website',
+      website1: 'https://www.arm.com/',
+      link2: '',
+      website2: '',
       contactPerson: '',
       degree: '',
       position: '',
@@ -148,7 +160,10 @@ const Team = () => {
     },
     {
       name: 'Framework Computer LLC',
-      website: 'https://frame.work/',
+      link1: 'Website',
+      website1: 'https://frame.work/',
+      link2: '',
+      website2: '',
       contactPerson: '',
       degree: '',
       position: '',
@@ -160,7 +175,10 @@ const Team = () => {
     },
     {
       name: 'GitHub Security',
-      website: 'https://github.com/',
+      link1: 'Website',
+      website1: 'https://github.com/',
+      link2: '',
+      website2: '',
       contactPerson: '',
       degree: '',
       position: '',
@@ -171,8 +189,26 @@ const Team = () => {
       phone2Label: ''
     },
     {
-      name: 'Insyde',
-      website: 'https://www.insyde.com/',
+      name: 'Insyde Software',
+      link1: 'Website',
+      website1: 'https://www.insyde.com/',
+      link2: '',
+      website2: '',
+      contactPerson: '',
+      degree: '',
+      position: '',
+      email: '',
+      phone1: '',
+      phone1Label: '',
+      phone2: '',
+      phone2Label: ''
+    },
+    {
+      name: 'Intel Corporation',
+      link1: 'Website',
+      website1: 'https://www.intel.com/content/www/us/en/homepage.html',
+      link2: '',
+      website2: '',
       contactPerson: '',
       degree: '',
       position: '',
@@ -184,7 +220,10 @@ const Team = () => {
     },
     {
       name: 'Lenovo',
-      website: 'https://www.lenovo.com/us/en/',
+      link1: 'Website',
+      website1: 'https://www.lenovo.com/us/en/',
+      link2: '',
+      website2: '',
       contactPerson: '',
       degree: '',
       position: '',
@@ -196,7 +235,10 @@ const Team = () => {
     },
     {
       name: 'Phoenix Technologies',
-      website: 'https://phoenixtech.com/',
+      link1: 'Website',
+      website1: 'https://phoenixtech.com/',
+      link2: '',
+      website2: '',
       contactPerson: 'Richard \'Dick\' Wilkins',
       degree: 'Ph.D.',
       position: 'Principal Technology Liaison',
@@ -208,7 +250,10 @@ const Team = () => {
     },
     {
       name: 'UEFI-RS',
-      website: 'https://github.com/rust-osdev/uefi-rs',
+      link1: 'Website',
+      website1: 'https://github.com/rust-osdev/uefi-rs',
+      link2: '',
+      website2: '',
       contactPerson: '',
       degree: '',
       position: '',
@@ -307,17 +352,30 @@ const Team = () => {
             )}
           </div>
           
-          {/* Website Button */}
-          <div className="flex-shrink-0">
-            <a
-              href={collaborator.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-md hover:from-primary-600 hover:to-accent-600 transition-all text-sm"
-            >
-              <FaGlobe className="mr-2" />
-              Website
-            </a>
+          {/* Website Buttons */}
+          <div className="flex-shrink-0 flex flex-col sm:flex-row gap-2">
+            {collaborator.website1 && (
+              <a
+                href={collaborator.website1}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-md hover:from-primary-600 hover:to-accent-600 transition-all text-sm"
+              >
+                <FaGlobe className="mr-2" />
+                {collaborator.link1 || 'Website'}
+              </a>
+            )}
+            {collaborator.website2 && (
+              <a
+                href={collaborator.website2}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-accent-500 to-primary-500 text-white rounded-md hover:from-accent-600 hover:to-primary-600 transition-all text-sm"
+              >
+                <FaGlobe className="mr-2" />
+                {collaborator.link2 || 'Link'}
+              </a>
+            )}
           </div>
         </div>
       </div>
@@ -429,7 +487,7 @@ const Team = () => {
             {/* Key Collaborator Section */}
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Key Collaborator & the Open-Source Ecosystem (OSE) Team Lead
+               Open-Source Ecosystem (OSE) Team Lead
               </h3>
               <div className="bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-accent-500">
                 <div className="divide-y divide-gray-200">
