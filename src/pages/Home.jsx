@@ -57,6 +57,10 @@ const Home = () => {
               </span>
               <span className="px-6 py-3 bg-dark-800/50 backdrop-blur-sm border border-accent-500/30 rounded-full text-lg font-semibold relative overflow-hidden">
                 <div className="holo-effect"></div>
+                	☸ Security Analyses
+              </span>
+              <span className="px-6 py-3 bg-dark-800/50 backdrop-blur-sm border border-accent-500/30 rounded-full text-lg font-semibold relative overflow-hidden">
+                <div className="holo-effect"></div>
                 🔒 Memory-Safe Variants
               </span>
               <span className="px-6 py-3 bg-dark-800/50 backdrop-blur-sm border border-accent-500/30 rounded-full text-lg font-semibold relative overflow-hidden">
@@ -101,6 +105,15 @@ const Home = () => {
               <p className="text-gray-700 text-center">
                 We focus on expediting and effectively resolving existing bug reports in the bug repository
 by prioritizing them, creating necessary triaging information, and proactively patching them.
+              </p>
+            </div>
+            
+            {/* Security analyses */}
+            <div className="bg-gradient-to-br from-primary-50 via-white to-accent-50 rounded-lg shadow-md p-8 hover:shadow-xl transition-shadow border border-primary-100">
+              <div className="text-5xl mb-4 text-center">☸</div>
+              <h3 className="text-2xl font-bold text-dark-900 mb-4 text-center">Security Analyses</h3>
+              <p className="text-gray-700 text-center">
+                We will develop the necessary tools and techniques to support dynamic and static analyses, enabling automated vulnerability detection for individual components.
               </p>
             </div>
 
