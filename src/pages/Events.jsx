@@ -53,12 +53,12 @@ const Events = () => {
       },
       programCommittee: [
         { name: 'Terrance E. Boult', affiliation: 'UCCS, Colorado, USA' },
-        { name: 'Edhaya Chandran', affiliation: 'Arm, USA' },
+        { name: 'Edhaya Chandran', affiliation: 'Arm, California, USA' },
         { name: 'Srihari Danduri', affiliation: 'Purdue University, Indiana, USA' },
         { name: 'Connor Glosner', affiliation: 'Purdue University, Indiana, USA' },
-        { name: 'Tim Lewis', affiliation: 'Insyde Software, USA' },
-        { name: 'Alex Matrosov', affiliation: 'Binarly, USA' },
-        { name: 'Dick Wilkins', affiliation: 'Phoenix Technologies, USA' },
+        { name: 'Tim Lewis', affiliation: 'Insyde Software, Massachusetts, USA' },
+        { name: 'Alex Matrosov', affiliation: 'Binarly Inc., California, USA' },
+        { name: 'Dick Wilkins', affiliation: 'Phoenix Technologies, California, USA' },
       ],
       about: `A firmware program is embedded in non-volatile storage on a computer's motherboard. It controls how computing devices, ranging from cloud servers to resource-constrained Internet of Things (IoT) platforms, start their boot processes and interact with their operating systems after power-on. The Unified Extensible Firmware Interface (UEFI) is an open standard for computing system firmware architecture specification. The TianoCore community maintains reference implementations of various components of the UEFI specification, for example, EDK II. This has resulted in a vibrant and mature Open-Source Ecosystem (OSE) with a significant impact on global security, safety, and privacy. Given the widespread use of the TianoCore repositories, security vulnerabilities may be leveraged by malicious actors and cyber-criminals to develop exploits that could cause potentially massive-scale harm to individuals, businesses, and the public sectors, including critical infrastructure. A recent $1.2M project (2025-2027) sponsored by the U.S. National Science Foundation (NSF), named TianoShield, aims to enhance the state of security of the TianoCore OSE and improve its overall open-source development process and practices. FirmVuln26 will focus on improvements, new results, and open problems in protecting the TianoCore OSE by using the TianoShield project as the anchor, while welcoming talks from other participants and stakeholders in the firmware world.`,
       callForTalks: {
