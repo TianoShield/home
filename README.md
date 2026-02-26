@@ -77,7 +77,7 @@ Individual page components, each representing a route.
 | `Team.jsx` | `/team` | Two tabs: Implementation team members and Consultants/Collaborators |
 | `Contact.jsx` | `/contact` | Contact form that opens default email client |
 | `Deliverables.jsx` | `/deliverables` | Placeholder for project deliverables (under construction) |
-| `Events.jsx` | `/events` | Placeholder for conferences and events (under construction) |
+| `Events.jsx` | `/events` | Workshops, conferences, and community events associated with the TianoShield project |
 | `News.jsx` | `/news` | Placeholder for news and updates (under construction) |
 | `Resources.jsx` | `/resources` | Placeholder for papers, tools, datasets (under construction) |
 
