@@ -406,8 +406,8 @@ const Events = () => {
 
                 <hr className="border-gray-200" />
 
-                {/* Tentative Program */}
-                <SectionToggle label={`Tentative Program (${event.date})`} eventId={event.id} sectionKey="program">
+                {/* Program */}
+                <SectionToggle label={`Program (${event.date})`} eventId={event.id} sectionKey="program">
                   <div className="space-y-3">
                     {event.program.map((slot, idx) => (
                       <div
