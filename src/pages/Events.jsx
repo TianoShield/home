@@ -81,7 +81,7 @@ const Events = () => {
       program: [
         {
           time: '9:00 – 10:30 am',
-          title: 'Welcome by the organizers and keynote talk',
+          title: 'Welcome by the organizers and the keynote talk',
           talks: [
             {
               title: 'All Models Are Wrong, Some Are Useful: Firmware-Aware Risk Scoring for Real-World Prioritization',
