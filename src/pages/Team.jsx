@@ -32,55 +32,48 @@ const Team = () => {
     },
     {
       id: 4,
+      name: 'Laura Baird',
+      profession: 'Undergraduate Research Assistant',
+      location: 'UCCS, Colorado, USA',
+      website: ''
+    },	
+    {
+      id: 5,
       name: 'Sourag Cherupatyamoolayil',
       profession: 'Graduate Research Assistant',
       location: 'Purdue University, Indiana, USA',
       website: ''
     },
     {
-      id: 5,
+      id: 6,
+      name: 'Michael Connor',
+      profession: 'Undergraduate Research Assistant',
+      location: 'UCCS, Colorado, USA',
+      website: ''
+    },	
+    {
+      id: 7,
       name: 'Srihari Danduri',
       profession: 'Graduate Research Assistant',
       location: 'Purdue University, Indiana, USA',
       website: ''
     },
     {
-      id: 6,
+      id: 8,
       name: 'Connor Glosner',
       profession: 'Graduate Research Assistant',
       location: 'Purdue University, Indiana, USA',
       website: ''
     },
     {
-      id: 7,
-      name: 'Devin Haggitt',
-      profession: 'Graduate Research Assistant',
-      location: 'UCCS, Colorado, USA',
-      website: ''
-    },
-    {
-      id: 8,
-      name: 'Samuel Poarch',
-      profession: 'Undergraduate Research Assistant',
-      location: 'UCCS, Colorado, USA',
-      website: ''
-    },
-    {
       id: 9,
-      name: 'Neelesh Reddybattula',
-      profession: 'Graduate Research Assistant',
-      location: 'UCCS, Colorado, USA',
-      website: ''
-    },
-    {
-      id: 10,
       name: 'Ming Shen',
       profession: 'Graduate Research Assistant',
       location: 'Purdue University, Indiana, USA',
       website: ''
     },
     {
-      id: 11,
+      id: 10,
       name: 'Nazanin Siavash',
       profession: 'Graduate Research Assistant',
       location: 'UCCS, Colorado, USA',
@@ -117,9 +110,9 @@ const Team = () => {
       website1: 'https://www.binarly.io/',
       link2: '',
       website2: '',
-      contactPerson: 'Alex Matrosov',
+      contactPerson: 'Yegor Vasilenko',
       degree: '',
-      position: 'Founder and Board Member',
+      position: 'Head of Research',
       email: '',
       phone1: '',
       phone1Label: '',
