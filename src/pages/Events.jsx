@@ -38,7 +38,7 @@ const Events = () => {
       time: '9 am – 5 pm',
       venue: 'VulnCon26',
       location: 'DoubleTree Resort by Hilton Hotel Paradise Valley, Scottsdale, Arizona, USA',
-      projectWebsite: 'https://tianoshield.github.io/home',
+      workshopWebsite: 'https://www.first.org/conference/vulncon26/program#pInternational-Workshop-on-Firmware-Security-Vulnerabilities-FirmVuln26',
       organizingCommittee: {
         coChairs: [
           {
