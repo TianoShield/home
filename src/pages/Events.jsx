@@ -32,6 +32,57 @@ const Events = () => {
   const events = [
     {
       id: 1,
+      shortName: 'FTA 2026',
+      fullName: 'International Workshop on Firmware Testing and Analysis',
+      date: 'Mon 5 October 2026',
+      time: 'TBD',
+      venue: 'SPLASH/ISSTA 2026',
+      location: 'Oakland, California, USA',
+      projectWebsite: 'https://conf.researchr.org/home/splash-issta-2026/fta-2026',
+      organizingCommittee: {
+        coChairs: [
+          {
+            name: 'Armin Moin',
+            affiliation: 'University of Colorado Colorado Springs (UCCS), USA',
+          },
+          {
+            name: 'Aravind Machiry',
+            affiliation: 'Purdue University, USA',
+          },
+        ],
+      },
+      programCommittee: [
+        { name: 'Terrance E. Boult', affiliation: 'University of Colorado Colorado Springs (UCCS), USA' },
+        { name: 'Edhaya Chandran', affiliation: 'Arm, USA' },
+        { name: 'Srihari Danduri', affiliation: 'Purdue University, USA' },
+        { name: 'Connor Everett Glosner', affiliation: 'Purdue University, USA' },
+        { name: 'Tim Lewis', affiliation: 'USA' },
+        { name: 'Alex Matrosov', affiliation: 'Anthropic, USA' },
+        { name: 'Fabio Pagani', affiliation: 'Binarly, Italy' },
+        { name: 'Sam Thomas', affiliation: 'Binarly, USA' },
+        { name: 'Dick Wilkins', affiliation: 'Phoenix Technologies, USA' },
+      ],
+      about: `FTA 2026 is a workshop co-located with SPLASH/ISSTA 2026, focused on firmware testing and analysis. The workshop brings together researchers and practitioners working on methods and tools for testing, analyzing, and securing firmware in embedded and IoT systems. This event is organized as part of the TianoShield project, which is supported by the U.S. National Science Foundation (NSF) under Grant No. 2534021.`,
+      callForTalks: {
+        description: `If you are interested in submitting a paper to FTA 2026, please submit via HotCRP at https://fta26.hotcrp.com before the submission deadline. For questions, please email `,
+        email: 'amoin@uccs.edu',
+        deadlineSubmission: 'Mon 6 Jul 2026',
+        deadlineNotification: 'Mon 27 Jul 2026',
+        additionalInfo: `All submissions will be reviewed double-blind. At least one author of every accepted paper must register and present in person. All accepted papers will be made Open Access by ACM.`,
+        topics: [
+          'Automated static and dynamic firmware testing and analysis',
+          'AI-assisted firmware testing and analysis',
+          '(AI-enhanced) firmware maintenance and evolution',
+          '(AI-assisted) firmware security vulnerability detection and/or mitigation',
+          'Empirical studies, surveys, case studies, and lessons learned from the industry',
+          'Open reference datasets and benchmarks that enable future research in this area',
+        ],
+      },
+      program: [],
+      acknowledgement: `The FTA 2026 workshop is sponsored by ACM and uses SIGPLAN's standard submission and reviewing terms. Moreover, this event is organized as part of the TianoShield project, which is supported by the U.S. National Science Foundation (NSF) under Grant No. 2534021. Any opinions, findings, conclusions, or recommendations expressed in this event are those of the authors/speakers and do not necessarily reflect the views of the NSF.`,
+    },
+    {
+      id: 2,
       shortName: 'FirmVuln26',
       fullName: 'International Workshop on Firmware Security Vulnerabilities',
       date: 'April 13th, 2026',
