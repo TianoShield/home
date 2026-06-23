@@ -392,17 +392,39 @@ const Events = () => {
                 {/* Call for Talks */}
                 <SectionToggle label="Call for Talks" eventId={event.id} sectionKey="callForTalks">
                   <div className="space-y-5">
-                    <p className="text-gray-700 leading-relaxed">
-                      {event.callForTalks.description}{' '}
-                      <a
-                        href={`mailto:${event.callForTalks.email}`}
-                        className="text-primary-600 hover:text-primary-700 hover:underline font-medium"
-                      >
-                        {event.callForTalks.email}
-                      </a>
-                      {' '}by <span className="font-semibold text-gray-900">{event.callForTalks.deadlineSubmission}</span>.{' '}
-                      {event.callForTalks.additionalInfo}
-                    </p>
+                  <p className="text-gray-700 leading-relaxed">
+  {event.shortName === 'FTA 2026' ? (
+    <>
+      If you are interested in submitting a paper to FTA 2026, please submit via HotCRP at{' '}
+      <a href="https://fta26.hotcrp.com" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700 hover:underline font-medium">
+        https://fta26.hotcrp.com
+      </a>
+      {' '}before the submission deadline. For questions, please email{' '}
+      <a href="mailto:amoin@uccs.edu" className="text-primary-600 hover:text-primary-700 hover:underline font-medium">
+        amoin@uccs.edu
+      </a>
+      {' or '}
+      <a href="mailto:amachiry@purdue.edu" className="text-primary-600 hover:text-primary-700 hover:underline font-medium">
+        amachiry@purdue.edu
+      </a>
+      {' '}by <span className="font-semibold text-gray-900">{event.callForTalks.deadlineSubmission}</span>.{' '}
+      {event.callForTalks.additionalInfo}{' '}
+      For more info and full instructions, please visit the Call for Papers at{' '}
+      <a href="https://conf.researchr.org/home/splash-issta-2026/fta-2026#Call-for-Papers" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700 hover:underline font-medium">
+        https://conf.researchr.org/home/splash-issta-2026/fta-2026#Call-for-Papers
+      </a>.
+    </>
+  ) : (
+    <>
+      {event.callForTalks.description}{' '}
+      <a href={`mailto:${event.callForTalks.email}`} className="text-primary-600 hover:text-primary-700 hover:underline font-medium">
+        {event.callForTalks.email}
+      </a>
+      {' '}by <span className="font-semibold text-gray-900">{event.callForTalks.deadlineSubmission}</span>.{' '}
+      {event.callForTalks.additionalInfo}
+    </>
+  )}
+</p>
 
                     <div className="flex flex-col sm:flex-row gap-4">
                       <div className="flex-1 bg-primary-50 border border-primary-200 rounded-lg p-4">
