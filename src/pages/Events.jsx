@@ -433,15 +433,17 @@ const Events = () => {
                       </div>
                     </div>
 
+                    {event.shortName !== 'FTA 2026' && (
                     <div>
-                      <a
-                        href={`mailto:${event.callForTalks.email}?subject=Talk Proposal for ${event.shortName}`}
-                        className="inline-flex items-center px-5 py-2.5 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-md hover:from-primary-600 hover:to-accent-600 transition-all font-medium"
-                      >
-                        <FaEnvelope className="mr-2" />
-                        Submit a Talk Proposal
-                      </a>
-                    </div>
+                        <a
+                    href={`mailto:${event.callForTalks.email}?subject=Talk Proposal for ${event.shortName}`}
+                    className="inline-flex items-center px-5 py-2.5 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-md hover:from-primary-600 hover:to-accent-600 transition-all font-medium"
+                  >
+                    <FaEnvelope className="mr-2" />
+                    Submit a Talk Proposal
+                  </a>
+                </div>
+                    )}
                   </div>
                 </SectionToggle>
 
