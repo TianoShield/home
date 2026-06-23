@@ -53,13 +53,14 @@ const Events = () => {
       },
       programCommittee: [
         { name: 'Terrance E. Boult', affiliation: 'University of Colorado Colorado Springs (UCCS), USA' },
+        { name: 'Krishna Chaitanya Balusu', affiliation: 'Meta, USA' },
         { name: 'Edhaya Chandran', affiliation: 'Arm, USA' },
         { name: 'Srihari Danduri', affiliation: 'Purdue University, USA' },
         { name: 'Connor Everett Glosner', affiliation: 'Purdue University, USA' },
-        { name: 'Tim Lewis', affiliation: 'USA' },
+        { name: 'Tim Lewis', affiliation: 'Insyde Software, USA' },
         { name: 'Alex Matrosov', affiliation: 'Anthropic, USA' },
         { name: 'Fabio Pagani', affiliation: 'Binarly, Italy' },
-        { name: 'Sam Thomas', affiliation: 'Binarly, USA' },
+        { name: 'Sam Thomas', affiliation: 'RevEng.AI, USA' },
         { name: 'Dick Wilkins', affiliation: 'Phoenix Technologies, USA' },
       ],
       about: `FTA 2026 is a workshop co-located with SPLASH/ISSTA 2026, focused on firmware testing and analysis. The workshop brings together researchers and practitioners working on methods and tools for testing, analyzing, and securing firmware in embedded and IoT systems. This event is organized as part of the TianoShield project, which is supported by the U.S. National Science Foundation (NSF) under Grant No. 2534021.`,
@@ -80,6 +81,7 @@ const Events = () => {
       },
       program: [],
       acknowledgement: `The FTA 2026 workshop is sponsored by ACM and uses SIGPLAN's standard submission and reviewing terms. Moreover, this event is organized as part of the TianoShield project, which is supported by the U.S. National Science Foundation (NSF) under Grant No. 2534021. Any opinions, findings, conclusions, or recommendations expressed in this event are those of the authors/speakers and do not necessarily reflect the views of the NSF.`,
+      callForTalksLabel: 'Call for Papers',
     },
     {
       id: 2,
@@ -390,7 +392,7 @@ const Events = () => {
                 <hr className="border-gray-200" />
 
                 {/* Call for Talks */}
-                <SectionToggle label="Call for Talks" eventId={event.id} sectionKey="callForTalks">
+                <SectionToggle label={event.callForTalksLabel || "Call for Talks"} eventId={event.id} sectionKey="callForTalks">
                   <div className="space-y-5">
                   <p className="text-gray-700 leading-relaxed">
   {event.shortName === 'FTA 2026' ? (
