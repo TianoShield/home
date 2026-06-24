@@ -69,6 +69,8 @@ const Events = () => {
         email: 'amoin@uccs.edu',
         deadlineSubmission: 'Mon 6 Jul 2026',
         deadlineNotification: 'Mon 27 Jul 2026',
+        deadlineCameraReady: 'Mon 10 Aug 2026',
+        deadlineWorkshop: 'Mon 5 Oct 2026',
         additionalInfo: `All submissions will be reviewed double-blind. At least one author of every accepted paper must register and present in person. All accepted papers will be made Open Access by ACM.`,
         topics: [
           'Automated static and dynamic firmware testing and analysis',
@@ -428,20 +430,36 @@ const Events = () => {
   )}
 </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4">
-                      <div className="flex-1 bg-primary-50 border border-primary-200 rounded-lg p-4">
-                        <p className="text-xs font-semibold text-primary-600 uppercase tracking-wide mb-1">
-                          Submission Deadline
-                        </p>
-                        <p className="text-gray-900 font-bold">{event.callForTalks.deadlineSubmission}</p>
-                      </div>
-                      <div className="flex-1 bg-accent-50 border border-accent-200 rounded-lg p-4">
-                        <p className="text-xs font-semibold text-accent-600 uppercase tracking-wide mb-1">
-                          Notification of Acceptance
-                        </p>
-                        <p className="text-gray-900 font-bold">{event.callForTalks.deadlineNotification}</p>
-                      </div>
-                    </div>
+<div className="flex flex-col sm:flex-row gap-4 flex-wrap">
+  <div className="flex-1 bg-primary-50 border border-primary-200 rounded-lg p-4">
+    <p className="text-xs font-semibold text-primary-600 uppercase tracking-wide mb-1">
+      Submission Deadline
+    </p>
+    <p className="text-gray-900 font-bold">{event.callForTalks.deadlineSubmission}</p>
+  </div>
+  <div className="flex-1 bg-accent-50 border border-accent-200 rounded-lg p-4">
+    <p className="text-xs font-semibold text-accent-600 uppercase tracking-wide mb-1">
+      Notification of Acceptance
+    </p>
+    <p className="text-gray-900 font-bold">{event.callForTalks.deadlineNotification}</p>
+  </div>
+  {event.callForTalks.deadlineCameraReady && (
+    <div className="flex-1 bg-primary-50 border border-primary-200 rounded-lg p-4">
+      <p className="text-xs font-semibold text-primary-600 uppercase tracking-wide mb-1">
+        Camera-ready Deadline
+      </p>
+      <p className="text-gray-900 font-bold">{event.callForTalks.deadlineCameraReady}</p>
+    </div>
+  )}
+  {event.callForTalks.deadlineWorkshop && (
+    <div className="flex-1 bg-accent-50 border border-accent-200 rounded-lg p-4">
+      <p className="text-xs font-semibold text-accent-600 uppercase tracking-wide mb-1">
+        Workshop Date
+      </p>
+      <p className="text-gray-900 font-bold">{event.callForTalks.deadlineWorkshop}</p>
+    </div>
+  )}
+</div>
 
                     <div>
                       <p className="text-gray-700 font-medium mb-3">Topics of interest include, but are not limited to:</p>
