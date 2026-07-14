@@ -11,8 +11,8 @@ const Team = () => {
       name: 'Dr. Armin Moin',
       role: 'Principal Investigator (PI)',
       profession: 'Assistant Professor',
-      location: 'University of Colorado Colorado Springs (UCCS), Colorado, USA',
-      website: 'https://faculty.uccs.edu/amoin/'
+      location: 'Purdue University, Indiana, USA',
+      website: 'https://web.ics.purdue.edu/~moin/index.html'
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ const Team = () => {
       name: 'Dr. Terrance E. Boult',
       role: 'Senior Advisor',
       profession: 'Distinguished Professor',
-      location: 'UCCS, Colorado, USA',
+      location: 'University of Colorado Colorado Springs (UCCS), Colorado, USA',
       website: 'https://eas.uccs.edu/departments/computer-science/directory/faculty/terrance-boult'
     },
     {

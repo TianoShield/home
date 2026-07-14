@@ -43,7 +43,7 @@ const Events = () => {
         coChairs: [
           {
             name: 'Armin Moin',
-            affiliation: 'University of Colorado Colorado Springs (UCCS), USA',
+            affiliation: 'Purdue University, USA',
           },
           {
             name: 'Aravind Machiry',
@@ -98,7 +98,7 @@ const Events = () => {
         coChairs: [
           {
             name: 'Armin Moin',
-            affiliation: 'University of Colorado Colorado Springs (UCCS), USA',
+            affiliation: 'Purdue University, USA',
           },
           {
             name: 'Aravind Machiry',
