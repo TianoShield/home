@@ -117,8 +117,10 @@ const Team = () => {
       phone1: '',
       phone1Label: '',
       phone2: '',
-      phone2Label: ''
-    }
+      phone2Label: '',
+      contactPerson2: 'Fabio Pagani',
+      position2: 'Vulnerability Research Lead',
+    },
   ];
 
   // Other Collaborators
@@ -353,8 +355,8 @@ const Team = () => {
                 {collaborator.phone2 && (
                   <div className="flex items-center text-gray-700">
                     <FaMobileAlt className="mr-2 flex-shrink-0 text-primary-500" />
-                    <a
-                      href={`tel:${collaborator.phone2}`}
+                    
+                    <a  href={`tel:${collaborator.phone2}`}
                       className="text-primary-600 hover:text-primary-700 hover:underline"
                     >
                       {collaborator.phone2}
@@ -366,9 +368,27 @@ const Team = () => {
                     )}
                   </div>
                 )}
+
+              </div>
+            )}
+
+            {collaborator.contactPerson2 && (
+              <div className="space-y-3 mt-4 pt-4 border-t border-gray-200">
+                <div>
+                  <p className="text-lg font-semibold text-gray-800">
+                    {collaborator.contactPerson2}
+                  </p>
+                </div>
+                {collaborator.position2 && (
+                  <div className="flex items-center text-gray-700">
+                    <FaBriefcase className="mr-2 flex-shrink-0 text-primary-500" />
+                    <span>{collaborator.position2}</span>
+                  </div>
+                )}
               </div>
             )}
           </div>
+          
           
           {/* Website Buttons */}
           <div className="flex-shrink-0 flex flex-col sm:flex-row gap-2">
