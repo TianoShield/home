@@ -330,7 +330,7 @@ const Events = () => {
                       className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-md hover:from-primary-600 hover:to-accent-600 transition-all text-sm"
                     >
                       <FaGlobe className="mr-2" />
-                      Project Website
+                      {event.shortName === 'FTA 2026' ? 'Event Website' : 'Project Website'}
                     </a>
                   )}
                   <div className="p-2 rounded-full bg-white shadow-sm">
