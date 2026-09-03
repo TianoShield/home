@@ -61,25 +61,26 @@ const Team = () => {
     },
     {
       id: 8,
-      name: 'Ming Shen',
-      profession: 'Graduate Research Assistant',
-      location: 'Purdue University, Indiana, USA',
-      website: ''
-    },
-    {
-      id: 9,
       name: 'Ayushi Sharma',
       profession: 'Graduate Research Assistant',
       location: 'Purdue University, Indiana, USA',
       website: ''
     },
     {
-      id: 10,
+      id: 9,
       name: 'Shashank Sharma',
       profession: 'Graduate Research Assistant',
       location: 'Purdue University, Indiana, USA',
       website: ''
     },
+    {
+      id: 10,
+      name: 'Ming Shen',
+      profession: 'Graduate Research Assistant',
+      location: 'Purdue University, Indiana, USA',
+      website: ''
+    },
+    
     {
       id: 11,
       name: 'Nazanin Siavash',
