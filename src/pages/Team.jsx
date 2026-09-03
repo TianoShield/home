@@ -39,41 +39,49 @@ const Team = () => {
     },	
     {
       id: 5,
-      name: 'Sourag Cherupatyamoolayil',
+      name: 'Sourag Cherupattamoolayil',
       profession: 'Graduate Research Assistant',
       location: 'Purdue University, Indiana, USA',
       website: ''
     },
+    
     {
       id: 6,
-      name: 'Michael Connor',
-      profession: 'Undergraduate Research Assistant',
-      location: 'UCCS, Colorado, USA',
-      website: ''
-    },	
-    {
-      id: 7,
       name: 'Srihari Danduri',
       profession: 'Graduate Research Assistant',
       location: 'Purdue University, Indiana, USA',
       website: ''
     },
     {
-      id: 8,
+      id: 7,
       name: 'Connor Glosner',
       profession: 'Graduate Research Assistant',
       location: 'Purdue University, Indiana, USA',
       website: ''
     },
     {
-      id: 9,
+      id: 8,
       name: 'Ming Shen',
       profession: 'Graduate Research Assistant',
       location: 'Purdue University, Indiana, USA',
       website: ''
     },
     {
+      id: 9,
+      name: 'Ayushi Sharma',
+      profession: 'Graduate Research Assistant',
+      location: 'Purdue University, Indiana, USA',
+      website: ''
+    },
+    {
       id: 10,
+      name: 'Shashank Sharma',
+      profession: 'Graduate Research Assistant',
+      location: 'Purdue University, Indiana, USA',
+      website: ''
+    },
+    {
+      id: 11,
       name: 'Nazanin Siavash',
       profession: 'Graduate Research Assistant',
       location: 'UCCS, Colorado, USA',
