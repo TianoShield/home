@@ -12,25 +12,14 @@ const News = () => {
   const newsItems = [
 
     {
-
       id: 1,
-
-      date: 'Survey Open Until March 24, 2026 AoE',
-
-      tag: 'Survey',
-
+      date: 'October 5, 2026',
+      tag: 'Workshop',
       tagColor: 'from-primary-500 to-accent-500',
-
-      title: 'UEFI Firmware & TianoCore Community Survey',
-
-      content: `We have launched an online survey to gain some information about the UEFI Firmware and/or the TianoCore open-source community, which develops and maintains the core of the UEFI Firmware. If you have any expertise in this area, please participate and give us some input. Participation may be anonymous.`,
-
-      surveyUrl: 'https://surveyuccs.co1.qualtrics.com/jfe/form/SV_es7liivwFk0aDY2',
-
-      qrCode: true,
-
-      closing: 'The survey will be open until March 24, 2026 AoE. Thank you!',
-
+      title: 'FTA 2026: International Workshop on Firmware Testing and Analysis',
+      content: `We are pleased to announce FTA 2026, a new workshop co-located with SPLASH/ISSTA 2026, taking place on October 5, 2026 in Oakland, California, USA. FTA 2026 brings together researchers and practitioners working on methods and tools for testing, analyzing, and securing firmware.`,
+      link: 'https://conf.researchr.org/home/splash-issta-2026/fta-2026',
+      linkLabel: 'Visit FTA 2026 Website',
     },
 
   ];
