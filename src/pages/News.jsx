@@ -109,11 +109,30 @@ const News = () => {
 
             <div className="px-8 py-8">
 
-              <p className="text-gray-700 leading-relaxed text-base mb-6">
-
+            <p className="text-gray-700 leading-relaxed text-base mb-6">
                 {item.content}
-
               </p>
+
+              {item.link && (
+                <div className="flex-1 bg-gradient-to-r from-primary-50 to-accent-50 border border-primary-200 rounded-lg p-5 mb-6">
+                  <p className="text-sm font-semibold text-primary-700 uppercase tracking-wide mb-3">
+                    Learn More
+                  </p>
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-md hover:from-primary-600 hover:to-accent-600 transition-all font-medium text-sm"
+                  >
+                    <FaExternalLinkAlt className="flex-shrink-0" />
+                    {item.linkLabel}
+                  </a>
+                  <p className="mt-3 text-xs text-gray-500 break-all">
+                    {item.link}
+                  </p>
+                </div>
+              )}
+              
 
 
               {/* Survey Link + QR Code */}
