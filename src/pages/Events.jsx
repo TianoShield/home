@@ -35,7 +35,7 @@ const Events = () => {
       shortName: 'FTA 2026',
       fullName: 'International Workshop on Firmware Testing and Analysis',
       date: 'Mon 5 October 2026',
-      time: 'TBD',
+      time: '9 am-5 pm',
       venue: 'SPLASH/ISSTA 2026',
       location: 'Oakland, California, USA',
       projectWebsite: 'https://conf.researchr.org/home/splash-issta-2026/fta-2026',
@@ -66,7 +66,7 @@ const Events = () => {
       about: `FTA 2026 is a workshop co-located with SPLASH/ISSTA 2026, focused on firmware testing and analysis. The workshop brings together researchers and practitioners working on methods and tools for testing, analyzing, and securing firmware in embedded and IoT systems. This event is organized as part of the TianoShield project, which is supported by the U.S. National Science Foundation (NSF) under Grant No. 2534021.`,
       callForTalks: {
         description: `If you are interested in submitting a paper to FTA 2026, please submit via HotCRP at https://fta26.hotcrp.com before the submission deadline. For questions, please email `,
-        email: 'amoin@uccs.edu',
+        email: 'moin@purdue.edu',
         deadlineSubmission: 'Mon 6 Jul 2026',
         deadlineNotification: 'Mon 27 Jul 2026',
         deadlineCameraReady: 'Mon 10 Aug 2026',
@@ -82,7 +82,7 @@ const Events = () => {
         ],
       },
       program: [],
-      acknowledgement: `The FTA 2026 workshop is sponsored by ACM and uses SIGPLAN's standard submission and reviewing terms. Moreover, this event is organized as part of the TianoShield project, which is supported by the U.S. National Science Foundation (NSF) under Grant No. 2534021. Any opinions, findings, conclusions, or recommendations expressed in this event are those of the authors/speakers and do not necessarily reflect the views of the NSF.`,
+      acknowledgment: `The FTA 2026 workshop is sponsored by ACM and uses SIGPLAN's standard submission and reviewing terms. Moreover, this event is organized as part of the TianoShield project, which is supported by the U.S. National Science Foundation (NSF) under Grant No. 2534021. Any opinions, findings, conclusions, or recommendations expressed in this event are those of the authors/speakers and do not necessarily reflect the views of the NSF.`,
       callForTalksLabel: 'Call for Papers',
     },
     {
@@ -330,7 +330,7 @@ const Events = () => {
                       className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-md hover:from-primary-600 hover:to-accent-600 transition-all text-sm"
                     >
                       <FaGlobe className="mr-2" />
-                      {event.shortName === 'FTA 2026' ? 'Event Website' : 'Project Website'}
+                      {event.shortName === 'FTA 2026' || event.shortName === 'FirmVuln26' ? 'Event Website' : 'Project Website'}
                     </a>
                   )}
                   <div className="p-2 rounded-full bg-white shadow-sm">
