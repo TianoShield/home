@@ -10,15 +10,34 @@ import surveyQR from '../assets/survey_qr.png';
 const News = () => {
 
   const newsItems = [
-
     {
       id: 1,
+      date: 'December 2-3, 2026',
+      tag: 'Summit',
+      tagColor: 'from-primary-500 to-accent-500',
+      title: 'SOSE 2026: International Workshop on Firmware Testing and Analysis',
+      content: `We are invited to participate in the first U.S> National Science Foundation (NSF) Summit on Open Source Ecosystems (SOSE) on Dec 2-3, 2026, on the George Mason University (GMU) Campus in VA, USA. We will present the latest on our NSF SAFE-OSE project, TianoShield. Watch our video at https://youtu.be/Lniyt3fyK9c?si=A2dZUtNyi_qoubJ9%22`,
+      link: 'https://sose.gmu.edu/',
+      linkLabel: 'Visit FTA 2026 Website',
+    },
+    {
+      id: 2,
       date: 'October 5, 2026',
       tag: 'Workshop',
       tagColor: 'from-primary-500 to-accent-500',
       title: 'FTA 2026: International Workshop on Firmware Testing and Analysis',
-      content: `We are pleased to announce FTA 2026, a new workshop co-located with SPLASH/ISSTA 2026, taking place on October 5, 2026 in Oakland, California, USA. FTA 2026 brings together researchers and practitioners working on methods and tools for testing, analyzing, and securing firmware.`,
+      content: `We organized FTA 2026, a workshop dedicated to firmware security and maintenance, co-located with SPLASH/ISSTA 2026. We were pleased to meet the community on October 5, 2026, in Oakland, California, USA. FTA 2026 brought together researchers and practitioners working on methods and tools for testing, analyzing, and securing firmware.`,
       link: 'https://conf.researchr.org/home/splash-issta-2026/fta-2026',
+      linkLabel: 'Visit FTA 2026 Website',
+    },
+      {
+      id: 3,
+      date: 'April 14, 2026',
+      tag: 'Workshop',
+      tagColor: 'from-primary-500 to-accent-500',
+      title: 'International Workshop on Firmware Security Vulnerabilities (FirmVuln26)',
+      content: `We organized FirmVuln26, a workshop dedicated to firmware security and maintenance, co-located with VulnCon26. We were pleased to meet the community on April 14, 2026, in Scottsdale, Arizona, USA. FirmVuln26 brought together researchers and practitioners working on methods and tools for testing, analyzing, and securing firmware.`,
+      link: 'https://www.first.org/conference/vulncon26/program#pInternational-Workshop-on-Firmware-Security-Vulnerabilities-FirmVuln26',
       linkLabel: 'Visit FTA 2026 Website',
     },
 
