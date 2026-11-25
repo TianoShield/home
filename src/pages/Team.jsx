@@ -61,48 +61,62 @@ const Team = () => {
     },
     {
       id: 8,
-      name: 'Chinmayananda M A',
+      name: 'Mikhail Golovenchits',
       profession: 'Graduate Research Assistant',
       location: 'Purdue University, Indiana, USA',
       website: ''
     },
     {
       id: 9,
-      name: 'Timur Oncu',
+      name: 'Matthew Kelley',
       profession: 'Graduate Research Assistant',
       location: 'Purdue University, Indiana, USA',
       website: ''
     },
     {
       id: 10,
-      name: 'Ayushi Sharma',
+      name: 'Chinmayananda M A',
       profession: 'Graduate Research Assistant',
       location: 'Purdue University, Indiana, USA',
       website: ''
     },
     {
       id: 11,
-      name: 'Shashank Sharma',
+      name: 'Timur Oncu',
       profession: 'Graduate Research Assistant',
       location: 'Purdue University, Indiana, USA',
       website: ''
     },
     {
       id: 12,
-      name: 'Ming Shen',
+      name: 'Ayushi Sharma',
       profession: 'Graduate Research Assistant',
       location: 'Purdue University, Indiana, USA',
       website: ''
-    },    
+    },
     {
       id: 13,
-      name: 'Nazanin Siavash',
+      name: 'Shashank Sharma',
       profession: 'Graduate Research Assistant',
       location: 'Purdue University, Indiana, USA',
       website: ''
     },
     {
       id: 14,
+      name: 'Ming Shen',
+      profession: 'Graduate Research Assistant',
+      location: 'Purdue University, Indiana, USA',
+      website: ''
+    },    
+    {
+      id: 15,
+      name: 'Nazanin Siavash',
+      profession: 'Graduate Research Assistant',
+      location: 'Purdue University, Indiana, USA',
+      website: ''
+    },
+    {
+      id: 16,
       name: 'Shambhavi Sinha',
       profession: 'Graduate Research Assistant',
       location: 'Purdue University, Indiana, USA',
