@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaMapMarkerAlt, FaCalendarAlt, FaClock, FaEnvelope, FaGlobe, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 const Events = () => {
-  const [expandedEvents, setExpandedEvents] = useState({ 1: true });
+  const [expandedEvents, setExpandedEvents] = useState({ 1: false });
   const [expandedSections, setExpandedSections] = useState({
     1: {
       about: true,
