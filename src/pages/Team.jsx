@@ -12,8 +12,7 @@ const Team = () => {
       role: 'Principal Investigator (PI)',
       profession: 'Assistant Professor',
       location: 'Purdue University, Indiana, USA',
-      website1: 'https://polytechnic.purdue.edu/profile/moin',
-      website2: 'https://web.ics.purdue.edu/~moin/index.html'
+      website: 'https://polytechnic.purdue.edu/profile/moin',
     },
     {
       id: 2,
