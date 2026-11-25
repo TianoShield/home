@@ -156,13 +156,14 @@ const Team = () => {
       contactPerson: 'Yegor Vasilenko',
       degree: '',
       position: 'Head of Research',
-      email: '',
+      email: 'yegor@binarly.io',
       phone1: '',
       phone1Label: '',
       phone2: '',
       phone2Label: '',
       contactPerson2: 'Fabio Pagani',
       position2: 'Vulnerability Research Lead',
+      email2: 'fabio@binarly.io',
     },
   ];
 
