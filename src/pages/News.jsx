@@ -38,7 +38,7 @@ const News = () => {
       title: 'International Workshop on Firmware Security Vulnerabilities (FirmVuln26)',
       content: `We organized FirmVuln26, a workshop dedicated to firmware security and maintenance, co-located with VulnCon26. We were pleased to meet the community on April 14, 2026, in Scottsdale, Arizona, USA. FirmVuln26 brought together researchers and practitioners working on methods and tools for testing, analyzing, and securing firmware.`,
       link: 'https://www.first.org/conference/vulncon26/program#pInternational-Workshop-on-Firmware-Security-Vulnerabilities-FirmVuln26',
-      linkLabel: 'Visit FTA 2026 Website',
+      linkLabel: 'Visit FirmVuln26 Website',
     },
 
   ];
