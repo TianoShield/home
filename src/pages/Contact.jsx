@@ -20,7 +20,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    const mailtoLink = `mailto:amoin@uccs.edu?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+    const mailtoLink = `mailto:moin@purdue.edu?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     )}`;
     
@@ -77,7 +77,7 @@ const Contact = () => {
               <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-md flex items-center">
                 <FaCheckCircle className="text-green-600 mr-3 flex-shrink-0" />
                 <p className="text-green-800 text-sm">
-                  Your email client should open shortly. If not, please email us directly at amoin@uccs.edu
+                  Your email client should open shortly. If not, please email us directly at moin@purdue.edu
                 </p>
               </div>
             )}
