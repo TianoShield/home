@@ -16,9 +16,9 @@ const News = () => {
       tag: 'Summit',
       tagColor: 'from-primary-500 to-accent-500',
       title: 'SOSE 2026: International Workshop on Firmware Testing and Analysis',
-      content: `We are invited to participate in the first U.S. National Science Foundation (NSF) Summit on Open Source Ecosystems (SOSE) on Dec 2-3, 2026, on the George Mason University (GMU) Campus in VA, USA. We will present the latest on our NSF SAFE-OSE project, TianoShield. Watch our video at https://youtu.be/Lniyt3fyK9c?si=A2dZUtNyi_qoubJ9%22`,
-      link: 'https://sose.gmu.edu/',
-      linkLabel: 'Visit FTA 2026 Website',
+      content: `We are invited to participate in the first U.S. National Science Foundation (NSF) Summit on Open Source Ecosystems (SOSE) on Dec 2-3, 2026, on the George Mason University (GMU) Campus in VA, USA. We will present the latest on our NSF SAFE-OSE project, TianoShield. See https://sose.gmu.edu/.`,
+      link: 'https://youtu.be/Lniyt3fyK9c?si=A2dZUtNyi_qoubJ9%22',
+      linkLabel: 'Watch our video on YouTube',
     },
     {
       id: 2,
