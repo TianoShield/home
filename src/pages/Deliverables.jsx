@@ -11,10 +11,10 @@ const Deliverables = () => {
             <FaTools className="text-6xl text-primary-600" />
           </div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Open-Source
+            Software, Data, & Publications
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            All software artifacts are available as open-source software at <a href="https://github.com/TianoShield">https://github.com/TianoShield</a>.
+            All software artifacts are available as open-source software at <a href="https://github.com/TianoShield">https://github.com/TianoShield</a>. All research publications and data will also be listed here.
           </p>
           <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-50 to-accent-50 text-primary-700 rounded-full text-sm font-semibold">
            Publications
