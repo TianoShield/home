@@ -11,16 +11,17 @@ const Deliverables = () => {
             <FaTools className="text-6xl text-primary-600" />
           </div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Under Construction
+            Open-Source
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            We're working hard to bring you information.
-            Check back soon!
+            All software artifacts are available as open-source software at <a href="https://github.com/TianoShield">https://github.com/TianoShield</a>.
           </p>
           <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-50 to-accent-50 text-primary-700 rounded-full text-sm font-semibold">
-            Coming soon...
+           Publications
           </div>
-          
+          <ul>
+          <li><a href="https://doi.org/10.1109/SP63933.2026.00163">SoK: All You Ever Wanted to Know About Bootloader Security but Were Afraid to Ask</a></li>
+          </ul>
           <div className="mt-8">
             <Link
               to="/"
