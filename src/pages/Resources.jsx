@@ -11,14 +11,16 @@ const Deliverables = () => {
             <FaTools className="text-6xl text-primary-600" />
           </div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Under Construction
+            Useful Links
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            We're working hard to bring you information.
-            Check back soon!
+            You can check out the following URLs to learn more about some of our resources beyond the TianoShield project:
           </p>
           <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-50 to-accent-50 text-primary-700 rounded-full text-sm font-semibold">
-            Coming soon...
+            <a href="https://web.ics.purdue.edu/~moin/qcase/">Purdue QCASE Lab</a>
+          </div>
+          <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-50 to-accent-50 text-primary-700 rounded-full text-sm font-semibold">
+            <a href="https://purs3lab.github.io">PurS3 Lab</a>
           </div>
           
           <div className="mt-8">
